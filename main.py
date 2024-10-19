@@ -2,8 +2,8 @@ import RPi.GPIO as GPIO
 import time
 
 GPIO.setmode(GPIO.BCM)
-charge_pin = 18  # GPIO pin to charge the capacitor
-measure_pin = 23  # GPIO pin to measure the voltage across the capacitor
+charge_pin = 4  # GPIO pin to charge the capacitor
+measure_pin = 5  # GPIO pin to measure the voltage across the capacitor
 
 GPIO.setup(charge_pin, GPIO.OUT)
 GPIO.setup(measure_pin, GPIO.IN)
